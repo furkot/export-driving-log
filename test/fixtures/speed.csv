@@ -1,0 +1,4 @@
+"From","From Address","To","To Address","Departure Date","Departure Time","Arrival Date","Arrival Time","Driving Time","Distance","Total Driving Time","Total Distance","Notes"
+"San Francisco","San Francisco, CA","Redding","1510 Gordon Lane, Redding, CA 96002, USA","2013-07-08","09:00","2013-07-08","13:17","4h 17m","213.0","4h 17m","213.0",""
+"Redding","1510 Gordon Lane, Redding, CA 96002, USA","Lane","51-559 Walnut Place, Springfield, OR 97477, USA","2013-07-08","13:32","2013-07-08","16:58","3h 26m","320.6","7h 43m","533.5",""
+"Lane","51-559 Walnut Place, Springfield, OR 97477, USA","Portland","Portland, OR","2013-07-08","17:13","2013-07-08","19:40","2h 26m","110.7","10h 10m","644.2",""

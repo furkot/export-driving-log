@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "name": "",
+    "author": {
+      "name": "Furkot - road trip planner",
+      "short_name": "Furkot",
+      "email": {
+        "id": "trips",
+        "domain": "furkot.com"
+      },
+      "link": "https://trips.furkot.com"
+    }
+  },
+  "routes": [
+    {
+      "points": [
+        {
+          "day": 0,
+          "name": "San Francisco",
+          "coordinates": {
+            "lat": 37.7749295,
+            "lon": -122.41941550000001
+          },
+          "locality": {
+            "town": "San Francisco",
+            "province": "CA",
+            "province_long": "California",
+            "country": "US",
+            "country_long": "United States"
+          },
+          "notes": "",
+          "address": "San Francisco, CA",
+          "visit_duration": 0,
+          "nights": 0,
+          "arrival_time": 1373288400000,
+          "departure_time": 1373288400000
+        },
+        {
+          "day": 0,
+          "name": "Redding",
+          "coordinates": {
+            "lat": 40.54720023441049,
+            "lon": -122.34375
+          },
+          "address": "1510 Gordon Lane, Redding, CA 96002, USA",
+          "notes": "",
+          "locality": {
+            "town": "Redding",
+            "province": "CA",
+            "province_long": "California",
+            "country": "US",
+            "country_long": "United States"
+          },
+          "visit_duration": 900000,
+          "distance": 342748,
+          "driving": 11580,
+          "nights": 0,
+          "arrival_time": 1373299980000,
+          "departure_time": 1373300880000
+        },
+        {
+          "day": 0,
+          "name": "Lane",
+          "coordinates": {
+            "lat": 44.04811573082351,
+            "lon": -123.046875
+          },
+          "address": "51-559 Walnut Place, Springfield, OR 97477, USA",
+          "notes": "",
+          "pin": 25,
+          "locality": {
+            "town": "Springfield",
+            "province": "OR",
+            "province_long": "Oregon",
+            "country": "US",
+            "country_long": "United States"
+          },
+          "visit_duration": 900000,
+          "distance": 515914,
+          "driving": 18180,
+          "nights": 0,
+          "arrival_time": 1373319060000,
+          "departure_time": 1373319960000,
+          "symbol": "Gas Station"
+        },
+        {
+          "day": 0,
+          "name": "Portland",
+          "coordinates": {
+            "lat": 45.5234515,
+            "lon": -122.6762071
+          },
+          "locality": {
+            "town": "Portland",
+            "province": "OR",
+            "province_long": "Oregon",
+            "country": "US",
+            "country_long": "United States"
+          },
+          "notes": "Trip notes for first stop",
+          "address": "Portland, OR",
+          "visit_duration": 0,
+          "distance": 178156,
+          "driving": 6595,
+          "nights": 0,
+          "arrival_time": 1373326555000,
+          "departure_time": 1373326555000
+        }
+      ],
+      "name": ""
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "name": "Ski trip",
+    "units": "km",
+    "author": {
+      "name": "Furkot - road trip planner",
+      "short_name": "Furkot",
+      "email": {
+        "id": "trips",
+        "domain": "furkot.com"
+      },
+      "link": "https://trips.furkot.com"
+    }
+  },
+  "routes": [
+    {
+      "points": [
+        {
+          "day": 0,
+          "name": "Boston, MA",
+          "coordinates": {
+            "lat": 42.3584308,
+            "lon": -71.0597732
+          },
+          "locality": {
+            "town": "Boston",
+            "province": "MA",
+            "province_long": "Massachusetts",
+            "country": "US",
+            "country_long": "United States"
+          },
+          "notes": "",
+          "address": "Boston, MA",
+          "visit_duration": 0,
+          "nights": 0,
+          "arrival_time": 1366722000000,
+          "departure_time": 1366722000000
+        },
+        {
+          "day": 0,
+          "name": "Courtyard by Marriott",
+          "coordinates": {
+            "lat": 42.94989,
+            "lon": -71.43241
+          },
+          "address": "736 Huse Road, Manchester, NH 03103, USA",
+          "notes": "",
+          "locality": {
+            "town": "Manchester",
+            "province": "NH",
+            "province_long": "New Hampshire",
+            "country": "US",
+            "country_long": "United States"
+          },
+          "visit_duration": 0,
+          "url": "http://www.easytobook.com/en/united-states-of-america/new-hampshire/manchester/courtyard-by-marriott-manchester/?affid=280826683",
+          "distance": 80888,
+          "driving": 3319,
+          "nights": 1,
+          "arrival_time": 1366725319000,
+          "departure_time": 1366808400000,
+          "symbol": "Lodging"
+        },
+        {
+          "day": 0,
+          "name": "Concord, NH, USA",
+          "coordinates": {
+            "lat": 43.20517581723733,
+            "lon": -71.531982421875
+          },
+          "address": "Frederick E. Everett Turnpike, Concord, NH 03301, USA",
+          "notes": "",
+          "locality": {
+            "town": "Concord",
+            "province": "NH",
+            "province_long": "New Hampshire",
+            "country": "US",
+            "country_long": "United States"
+          },
+          "visit_duration": 7200000,
+          "distance": 37154,
+          "driving": 1473,
+          "nights": 0,
+          "arrival_time": 1366809873000,
+          "departure_time": 1366817073000
+        },
+        {
+          "day": 1,
+          "name": "Courtyard by Marriott",
+          "coordinates": {
+            "lat": 42.94989,
+            "lon": -71.43241
+          },
+          "address": "736 Huse Road, Manchester, NH 03103, USA",
+          "notes": "",
+          "locality": {
+            "town": "Manchester",
+            "province": "NH",
+            "province_long": "New Hampshire",
+            "country": "US",
+            "country_long": "United States"
+          },
+          "visit_duration": 7200000,
+          "url": "http://www.easytobook.com/en/united-states-of-america/new-hampshire/manchester/courtyard-by-marriott-manchester/?affid=280826683",
+          "distance": 35992,
+          "driving": 1414,
+          "nights": 1,
+          "arrival_time": 1366818487000,
+          "departure_time": 1366902000000,
+          "symbol": "Lodging"
+        },
+        {
+          "day": 0,
+          "name": "Killington, VT",
+          "coordinates": {
+            "lat": 43.6647222,
+            "lon": -72.79333329999997
+          },
+          "locality": {
+            "town": "Killington",
+            "province": "VT",
+            "province_long": "Vermont",
+            "country": "US",
+            "country_long": "United States"
+          },
+          "phone": "(508) 872-6101",
+          "notes": "",
+          "address": "Killington, VT",
+          "visit_duration": 0,
+          "distance": 181741,
+          "driving": 7309,
+          "nights": 0,
+          "arrival_time": 1366909309000,
+          "departure_time": 1366909309000
+        }
+      ],
+      "name": "Ski trip"
+    }
+  ]
+}
