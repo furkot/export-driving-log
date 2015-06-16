@@ -32,8 +32,8 @@
           "address": "San Francisco, CA",
           "visit_duration": 0,
           "nights": 0,
-          "arrival_time": "2013-07-08T13:00:00.000Z",
-          "departure_time": "2013-07-08T13:00:00.000Z"
+          "arrival_time": "2013-07-08T09:00:00.000Z",
+          "departure_time": "2013-07-08T09:00:00.000Z"
         },
         {
           "day": 0,
@@ -56,8 +56,8 @@
           "driving": 15440,
           "speed": -0.75,
           "nights": 0,
-          "arrival_time": "2013-07-08T17:17:20.000Z",
-          "departure_time": "2013-07-08T17:32:20.000Z"
+          "arrival_time": "2013-07-08T13:17:20.000Z",
+          "departure_time": "2013-07-08T13:32:20.000Z"
         },
         {
           "day": 0,
@@ -81,8 +81,8 @@
           "driving": 12381.936000000002,
           "speed": 150000,
           "nights": 0,
-          "arrival_time": "2013-07-08T20:58:41.936Z",
-          "departure_time": "2013-07-08T21:13:41.936Z"
+          "arrival_time": "2013-07-08T16:58:41.936Z",
+          "departure_time": "2013-07-08T17:13:41.936Z"
         },
         {
           "day": 0,
@@ -105,8 +105,8 @@
           "driving": 8793.333333333334,
           "speed": -0.75,
           "nights": 0,
-          "arrival_time": "2013-07-08T23:40:15.269Z",
-          "departure_time": "2013-07-08T23:40:15.269Z"
+          "arrival_time": "2013-07-08T19:40:15.269Z",
+          "departure_time": "2013-07-08T19:40:15.269Z"
         }
       ],
       "name": ""

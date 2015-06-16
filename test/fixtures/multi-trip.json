@@ -33,8 +33,8 @@
           "address": "Boston, MA",
           "visit_duration": 0,
           "nights": 0,
-          "arrival_time": 1366722000000,
-          "departure_time": 1366722000000
+          "arrival_time": 1366707600000,
+          "departure_time": 1366707600000
         },
         {
           "day": 0,
@@ -57,8 +57,8 @@
           "distance": 80888,
           "driving": 3319,
           "nights": 1,
-          "arrival_time": 1366725319000,
-          "departure_time": 1366808400000,
+          "arrival_time": 1366710919000,
+          "departure_time": 1366794000000,
           "symbol": "Lodging"
         },
         {
@@ -81,8 +81,8 @@
           "distance": 37154,
           "driving": 1473,
           "nights": 0,
-          "arrival_time": 1366809873000,
-          "departure_time": 1366817073000
+          "arrival_time": 1366795473000,
+          "departure_time": 1366802673000
         },
         {
           "day": 1,
@@ -105,11 +105,10 @@
           "distance": 35992,
           "driving": 1414,
           "nights": 1,
-          "arrival_time": 1366818487000,
-          "departure_time": 1366902000000,
+          "arrival_time": 1366804087000,
+          "departure_time": 1366887600000,
           "symbol": "Lodging"
-        },
-        {
+        }, {
           "day": 0,
           "name": "Killington, VT",
           "coordinates": {
@@ -130,8 +129,8 @@
           "distance": 181741,
           "driving": 7309,
           "nights": 0,
-          "arrival_time": 1366909309000,
-          "departure_time": 1366909309000
+          "arrival_time": 1366894909000,
+          "departure_time": 1366894909000
         }
       ],
       "name": "Ski trip"
