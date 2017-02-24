@@ -52,4 +52,12 @@ describe('furkot-driving-log node module', function () {
     compareCsv(generated, expected);
   });
 
+  it('multi modal', function() {
+    var t = require('./fixtures/multi-modal-trip.json'),
+    generated = csv(t),
+    expected = readFileSync('fixtures/multi-modal.csv');
+
+    compareCsv(generated, expected);
+  });
+
 });
