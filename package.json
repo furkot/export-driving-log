@@ -22,7 +22,8 @@
   "devDependencies": {
     "jshint": "~2",
     "mocha": "~3",
-    "should": "~11"
+    "should": "~11",
+    "stream-buffers": "~3"
   },
   "scripts": {
     "test": "make check"

@@ -1,5 +1,7 @@
 var fs = require('fs');
 var path = require('path');
+var WritableStreamBuffer = require('stream-buffers').WritableStreamBuffer;
+
 var csv = require('..');
 
 /**
@@ -18,11 +20,17 @@ function readFileSync(name) {
   return fs.readFileSync(path.join(__dirname, name), 'utf8');
 }
 
+function generateCSV(t) {
+  var ostream = new WritableStreamBuffer();
+  csv(ostream, t);
+  return ostream.getContentsAsString('utf8');
+}
+
 describe('furkot-driving-log node module', function () {
 
   it('simple trip', function() {
     var t = require('./fixtures/simple-trip.json'),
-      generated = csv(t),
+      generated = generateCSV(t),
       expected = readFileSync('fixtures/simple.csv');
 
     compareCsv(generated, expected);
@@ -30,7 +38,7 @@ describe('furkot-driving-log node module', function () {
 
   it('simple trip with adjusted speed', function() {
     var t = require('./fixtures/speed-trip.json'),
-      generated = csv(t),
+      generated = generateCSV(t),
       expected = readFileSync('fixtures/speed.csv');
 
     compareCsv(generated, expected);
@@ -38,7 +46,7 @@ describe('furkot-driving-log node module', function () {
 
   it('multi trip', function() {
     var t = require('./fixtures/multi-trip.json'),
-      generated = csv(t),
+      generated = generateCSV(t),
       expected = readFileSync('fixtures/multi.csv');
 
     compareCsv(generated, expected);
@@ -46,7 +54,7 @@ describe('furkot-driving-log node module', function () {
 
   it('begin end time', function() {
     var t = require('./fixtures/time-trip.json'),
-    generated = csv(t),
+    generated = generateCSV(t),
     expected = readFileSync('fixtures/time.csv');
 
     compareCsv(generated, expected);
@@ -54,7 +62,7 @@ describe('furkot-driving-log node module', function () {
 
   it('multi modal', function() {
     var t = require('./fixtures/multi-modal-trip.json'),
-    generated = csv(t),
+    generated = generateCSV(t),
     expected = readFileSync('fixtures/multi-modal.csv');
 
     compareCsv(generated, expected);

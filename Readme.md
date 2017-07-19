@@ -17,7 +17,7 @@ $ npm install --save furkot-driving-log
 ```js
 var drivingLog = require('furkot-driving-log');
 
-drivingLog(trip);
+drivingLog(ostream, trip);
 ```
 
 ## License
