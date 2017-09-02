@@ -1,6 +1,6 @@
 {
   "name": "furkot-driving-log",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Generate CSV driving log from Furkot trip data.",
   "homepage": "https://trips.furkot.com",
   "author": {
