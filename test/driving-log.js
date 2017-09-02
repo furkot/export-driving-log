@@ -20,52 +20,66 @@ function readFileSync(name) {
   return fs.readFileSync(path.join(__dirname, name), 'utf8');
 }
 
-function generateCSV(t) {
+function generateCSV(t, fn) {
   var ostream = new WritableStreamBuffer();
   csv(ostream, t);
-  return ostream.getContentsAsString('utf8');
+  ostream
+  .on('error', fn)
+  .on('finish', function() {
+    fn(null, ostream.getContentsAsString('utf8'));
+  });
 }
 
 describe('furkot-driving-log node module', function () {
 
-  it('simple trip', function() {
+  it('simple trip', function(done) {
     var t = require('./fixtures/simple-trip.json'),
-      generated = generateCSV(t),
       expected = readFileSync('fixtures/simple.csv');
 
-    compareCsv(generated, expected);
+    generateCSV(t, function(err, generated) {
+      compareCsv(generated, expected);
+      done(err);
+    });
   });
 
-  it('simple trip with adjusted speed', function() {
+  it('simple trip with adjusted speed', function(done) {
     var t = require('./fixtures/speed-trip.json'),
-      generated = generateCSV(t),
       expected = readFileSync('fixtures/speed.csv');
 
-    compareCsv(generated, expected);
+    generateCSV(t, function(err, generated) {
+      compareCsv(generated, expected);
+      done(err);
+    });
   });
 
-  it('multi trip', function() {
+  it('multi trip', function(done) {
     var t = require('./fixtures/multi-trip.json'),
-      generated = generateCSV(t),
       expected = readFileSync('fixtures/multi.csv');
 
-    compareCsv(generated, expected);
+    generateCSV(t, function(err, generated) {
+      compareCsv(generated, expected);
+      done(err);
+    });
   });
 
-  it('begin end time', function() {
+  it('begin end time', function(done) {
     var t = require('./fixtures/time-trip.json'),
-    generated = generateCSV(t),
-    expected = readFileSync('fixtures/time.csv');
+      expected = readFileSync('fixtures/time.csv');
 
-    compareCsv(generated, expected);
+    generateCSV(t, function(err, generated) {
+      compareCsv(generated, expected);
+      done(err);
+    });
   });
 
-  it('multi modal', function() {
+  it('multi modal', function(done) {
     var t = require('./fixtures/multi-modal-trip.json'),
-    generated = generateCSV(t),
-    expected = readFileSync('fixtures/multi-modal.csv');
+      expected = readFileSync('fixtures/multi-modal.csv');
 
-    compareCsv(generated, expected);
+    generateCSV(t, function(err, generated) {
+      compareCsv(generated, expected);
+      done(err);
+    });
   });
 
 });
