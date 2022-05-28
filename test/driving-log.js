@@ -1,6 +1,5 @@
 var fs = require('fs');
 var path = require('path');
-var WritableStreamBuffer = require('stream-buffers').WritableStreamBuffer;
 
 var csv = require('..');
 
@@ -21,13 +20,8 @@ function readFileSync(name) {
 }
 
 function generateCSV(t, fn) {
-  var ostream = new WritableStreamBuffer();
-  csv(ostream, t);
-  ostream
-  .on('error', fn)
-  .on('finish', function() {
-    fn(null, ostream.getContentsAsString('utf8'));
-  });
+  const str = [...csv(t)].join('');
+  fn(null, str);
 }
 
 describe('furkot-driving-log node module', function () {
