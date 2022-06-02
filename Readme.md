@@ -2,20 +2,20 @@
 [![Build Status][build-image]][build-url]
 [![Dependency Status][deps-image]][deps-url]
 
-# furkot-driving-log
+# @furkot/export-driving-log
 
 Generate CSV driving log from [Furkot] trip data.
 
 ## Install
 
 ```sh
-$ npm install --save furkot-driving-log
+$ npm install --save @furkot/export-driving-log
 ```
 
 ## Usage
 
 ```js
-var drivingLog = require('furkot-driving-log');
+var drivingLog = require('@furkot/export-driving-log');
 
 drivingLog(ostream, trip);
 ```
@@ -26,11 +26,11 @@ MIT © [code42day](https://code42day.com)
 
 [Furkot]: https://trips.furkot.com
 
-[npm-image]: https://img.shields.io/npm/v/furkot-driving-log
-[npm-url]: https://npmjs.org/package/furkot-driving-log
+[npm-image]: https://img.shields.io/npm/v/@furkot/export-driving-log
+[npm-url]: https://npmjs.org/package/@furkot/export-driving-log
 
-[build-image]: https://img.shields.io/github/workflow/status/furkot/furkot-driving-log/check
-[build-url]: https://github.com/furkot/furkot-driving-log/actions/workflows/check.yaml
+[build-image]: https://img.shields.io/github/workflow/status/furkot/export-driving-log/check
+[build-url]: https://github.com/furkot/export-driving-log/actions/workflows/check.yaml
 
-[deps-image]: https://img.shields.io/librariesio/github/furkot/furkot-driving-log
-[deps-url]: https://libraries.io/npm/furkot-driving-log
+[deps-image]: https://img.shields.io/librariesio/release/npm/@furkot/export-driving-log
+[deps-url]: https://libraries.io/npm/@furkot%2Fexport-driving-log

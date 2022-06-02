@@ -1,5 +1,5 @@
 {
-  "name": "furkot-driving-log",
+  "name": "@furkot/export-driving-log",
   "version": "2.0.1",
   "description": "Generate CSV driving log from Furkot trip data.",
   "homepage": "https://trips.furkot.com",
@@ -8,7 +8,7 @@
     "email": "pirxpilot@code42day.com",
     "url": "https://code42day.com"
   },
-  "repository": "furkot/furkot-driving-log",
+  "repository": "furkot/export-driving-log",
   "license": "MIT",
   "keywords": [
     "furkot-driving-log",
