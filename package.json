@@ -20,9 +20,8 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "jshint": "~2",
-    "should": "~13",
-    "stream-buffers": "~3"
+    "@pirxpilot/jshint": "~3",
+    "should": "~13"
   },
   "scripts": {
     "test": "make check"
