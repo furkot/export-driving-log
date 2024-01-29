@@ -1,17 +1,17 @@
-var { describe, it } = require('node:test');
-var fs = require('fs');
-var path = require('path');
+const { describe, it } = require('node:test');
+const fs = require('node:fs');
+const path = require('node:path');
 
-var csv = require('..');
+const csv = require('..');
 
 /**
  * Compare files line-by-line
  */
 function compareCsv(actual, expected) {
-  var a = actual.split('\n');
-  var e = expected.split('\n');
+  const a = actual.split('\n');
+  const e = expected.split('\n');
   a.should.have.length(e.length);
-  a.forEach(function(line, index) {
+  a.forEach(function (line, index) {
     line.should.eql(e[index]);
   });
 }
@@ -20,61 +20,49 @@ function readFileSync(name) {
   return fs.readFileSync(path.join(__dirname, name), 'utf8');
 }
 
-function generateCSV(t, fn) {
-  const str = [...csv(t)].join('');
-  fn(null, str);
+function generateCSV(t) {
+  return Array.from(csv(t)).join('');
 }
 
 describe('furkot-driving-log node module', function () {
 
-  it('simple trip', function(_t, done) {
-    var t = require('./fixtures/simple-trip.json'),
-      expected = readFileSync('fixtures/simple.csv');
+  it('simple trip', function () {
+    const t = require('./fixtures/simple-trip.json');
+    const expected = readFileSync('fixtures/simple.csv');
 
-    generateCSV(t, function(err, generated) {
-      compareCsv(generated, expected);
-      done(err);
-    });
+    const generated = generateCSV(t);
+    compareCsv(generated, expected);
   });
 
-  it('simple trip with adjusted speed', function(_t, done) {
-    var t = require('./fixtures/speed-trip.json'),
-      expected = readFileSync('fixtures/speed.csv');
+  it('simple trip with adjusted speed', function () {
+    const t = require('./fixtures/speed-trip.json');
+    const expected = readFileSync('fixtures/speed.csv');
 
-    generateCSV(t, function(err, generated) {
-      compareCsv(generated, expected);
-      done(err);
-    });
+    const generated = generateCSV(t);
+    compareCsv(generated, expected);
   });
 
-  it('multi trip', function(_t, done) {
-    var t = require('./fixtures/multi-trip.json'),
-      expected = readFileSync('fixtures/multi.csv');
+  it('multi trip', function () {
+    const t = require('./fixtures/multi-trip.json');
+    const expected = readFileSync('fixtures/multi.csv');
 
-    generateCSV(t, function(err, generated) {
-      compareCsv(generated, expected);
-      done(err);
-    });
+    const generated = generateCSV(t);
+    compareCsv(generated, expected);
   });
 
-  it('begin end time', function(_t, done) {
-    var t = require('./fixtures/time-trip.json'),
-      expected = readFileSync('fixtures/time.csv');
+  it('begin end time', function () {
+    const t = require('./fixtures/time-trip.json');
+    const expected = readFileSync('fixtures/time.csv');
 
-    generateCSV(t, function(err, generated) {
-      compareCsv(generated, expected);
-      done(err);
-    });
+    const generated = generateCSV(t);
+    compareCsv(generated, expected);
   });
 
-  it('multi modal', function(_t, done) {
-    var t = require('./fixtures/multi-modal-trip.json'),
-      expected = readFileSync('fixtures/multi-modal.csv');
+  it('multi modal', function () {
+    const t = require('./fixtures/multi-modal-trip.json');
+    const expected = readFileSync('fixtures/multi-modal.csv');
 
-    generateCSV(t, function(err, generated) {
-      compareCsv(generated, expected);
-      done(err);
-    });
+    const generated = generateCSV(t);
+    compareCsv(generated, expected);
   });
-
 });
