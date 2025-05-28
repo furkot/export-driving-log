@@ -18,10 +18,8 @@
     "planner",
     "CSV"
   ],
-  "dependencies": {},
   "devDependencies": {
-    "@pirxpilot/jshint": "~3",
-    "should": "~13"
+    "@biomejs/biome": "^1.9.4"
   },
   "scripts": {
     "test": "make check"
