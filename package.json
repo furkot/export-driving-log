@@ -2,13 +2,18 @@
   "name": "@furkot/export-driving-log",
   "version": "3.0.0",
   "description": "Generate CSV driving log from Furkot trip data.",
+  "type": "module",
+  "exports": "./lib/driving-log.js",
   "homepage": "https://trips.furkot.com",
   "author": {
     "name": "Damian Krzeminski",
     "email": "pirxpilot@code42day.com",
     "url": "https://code42day.com"
   },
-  "repository": "furkot/export-driving-log",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furkot/export-driving-log.git"
+  },
   "license": "MIT",
   "keywords": [
     "furkot-driving-log",

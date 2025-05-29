@@ -15,9 +15,9 @@ $ npm install --save @furkot/export-driving-log
 ## Usage
 
 ```js
-var drivingLog = require('@furkot/export-driving-log');
+import drivingLog from '@furkot/export-driving-log';
 
-drivingLog(ostream, trip);
+drivingLog(trip);
 ```
 
 ## License
