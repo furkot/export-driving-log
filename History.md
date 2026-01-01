@@ -1,4 +1,10 @@
 
+4.1.0 / 2026-01-01
+==================
+
+ * add cost to driving log and ignore pass-thru points
+ * remove reference to deleted file from module descriptor
+
 4.0.0 / 2025-05-28
 ==================
 
