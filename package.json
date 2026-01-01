@@ -1,6 +1,6 @@
 {
   "name": "@furkot/export-driving-log",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "Generate CSV driving log from Furkot trip data.",
   "type": "module",
   "exports": "./lib/driving-log.js",
